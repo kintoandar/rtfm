@@ -1,0 +1,19 @@
+#!ipxe
+
+menu
+item --gap -- ---------------- Pesi Challenge Awesome Menu ----------------
+item centos5 CentOS 5
+item centos6 CentOS 6
+item reboot Reboot
+choose --default centos5 --timeout 5000 target && goto ${target}
+
+:centos5
+kernel http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/vmlinuz NOVERIFYSSL ks=http://kintoandar.com/share/ks5.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/initrd.img
+
+:centos6
+kernel http://mirror.centos.org/centos-6/6.5/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://kintoandar.com/share/ks6.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-6/6.5/os/x86_64/images/pxeboot/initrd.img
+
+:reboot
+reboot
