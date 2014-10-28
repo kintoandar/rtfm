@@ -1,7 +1,7 @@
 #!ipxe
 
 menu
-item --gap -- ---------------- Pesi Challenge Awesome Menu ----------------
+item --gap -- ---------------- Pepsi Challenge Awesome Menu ----------------
 item centos5 CentOS 5
 item centos6 CentOS 6
 item reboot Reboot
