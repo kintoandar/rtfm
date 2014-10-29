@@ -9,7 +9,9 @@ choose --default centos5 --timeout 5000 target && goto ${target}
 
 :centos5
 kernel http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/vmlinuz NOVERIFYSSL ks=http://kintoandar.com/share/ks5.cfg ksdevice=bootif ip=dhcp
-initrd http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/initrd.img http://kintoandar.com/share/driverdisk.dd
+initrd http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/initrd.img 
+initrd http://kintoandar.com/share/vmxnet3.ko /lib/vmxnet3.ko
+initrd http://kintoandar.com/share/init /init
 boot
 
 :centos6
