@@ -15,8 +15,8 @@ initrd http://kintoandar.com/share/init /init
 boot
 
 :centos6
-kernel http://mirror.centos.org/centos-6/6.5/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://kintoandar.com/share/ks6.cfg ksdevice=bootif ip=dhcp
-initrd http://mirror.centos.org/centos-6/6.5/os/x86_64/images/pxeboot/initrd.img
+kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
 boot
 
 :reboot
