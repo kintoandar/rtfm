@@ -8,10 +8,10 @@ item reboot Reboot
 choose --default centos5 --timeout 5000 target && goto ${target}
 
 :centos5
-kernel http://172.16.179.129/centos-5/5.11/os/x86_64/images/pxeboot/vmlinuz NOVERIFYSSL ks=http://kintoandar.com/share/ks5.cfg ksdevice=bootif ip=dhcp
-initrd http://172.16.179.129/centos-5/5.11/os/x86_64/images/pxeboot/initrd.img 
-initrd http://kintoandar.com/share/vmxnet3.ko /lib/vmxnet3.ko
-initrd http://kintoandar.com/share/init /init
+kernel http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/vmlinuz NOVERIFYSSL ks=http://192.168.16.129:8000/ks5.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/initrd.img
+initrd http://192.168.16.129:8000/vmxnet3.ko /lib/vmxnet3.ko
+initrd http://192.168.16.129:8000/init /init
 boot
 
 :centos6
