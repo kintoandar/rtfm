@@ -1,0 +1,22 @@
+yum install git gcc binutils make zlib
+git clone git://git.ipxe.org/ipxe.git
+cd ipxe && git checkout af17abf67f1c89ee7193185b6ba1584e4eded4bc
+cd src
+
+
+diff --git a/src/config/general.h b/src/config/general.h
+index 5392034..31e0676 100644
+--- a/src/config/general.h
++++ b/src/config/general.h
+@@ -68,7 +68,7 @@ FILE_LICENCE ( GPL2_OR_LATER );
+
+ #define        DOWNLOAD_PROTO_TFTP     /* Trivial File Transfer Protocol */
+ #define        DOWNLOAD_PROTO_HTTP     /* Hypertext Transfer Protocol */
+-#undef DOWNLOAD_PROTO_HTTPS    /* Secure Hypertext Transfer Protocol */
++#define        DOWNLOAD_PROTO_HTTPS    /* Secure Hypertext Transfer Protocol */
+ #undef DOWNLOAD_PROTO_FTP      /* File Transfer Protocol */
+ #undef DOWNLOAD_PROTO_SLAM     /* Scalable Local Area Multicast */
+ #undef DOWNLOAD_PROTO_NFS      /* Network File System Protocol */ 
+
+
+make bin/undionly.kpxe TRUST=/root/1.pem,/root/2.pem
