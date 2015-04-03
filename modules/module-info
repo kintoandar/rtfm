@@ -1,0 +1,449 @@
+Version 0
+3c574_cs
+	eth
+	"3Com 3c574 series PCMCIA ethernet driver"
+3c589_cs
+	eth
+	"3Com 3c589 series PCMCIA ethernet driver"
+3c59x
+	eth
+	"3Com 3c590/3c595/3c90x/3cx980"
+3w-9xxx
+	scsi
+	"3ware 9000 Series Storage Controller"
+3w-sas
+	scsi
+	"LSI 3ware 97xx SAS/SATA RAID Controller"
+3w-xxxx
+	scsi
+	"3ware Storage Controller"
+8021q
+	eth
+	"802.1q VLAN device driver"
+8139cp
+	eth
+	"RTL8139, SMC EZ Card Fast Ethernet"
+8139too
+	eth
+	"RTL8139, SMC EZ Card Fast Ethernet"
+DAC960
+	scsi
+	"Mylex DAC960 RAID Controller"
+aacraid
+	scsi
+	"Adaptec AACRAID"
+acenic
+	eth
+	"Alteon AceNIC Gigabit"
+ahci
+	scsi
+	"Advanced Host Controller Interface SATA"
+aic79xx
+	scsi
+	"Adaptec Aic79xx SCSI Host Bus Adapter driver"
+aic7xxx
+	scsi
+	"Adaptec AHA-2740, 28xx, 29xx, 39xx"
+aic94xx
+	scsi
+	"Adaptec aic94xx SCSI Host Bus Adapter driver"
+airo
+	eth
+	"Aironet 802.11 wireless ethernet"
+airo_cs
+	eth
+	"Aironet 802.11 PCMCIA wireless ethernet"
+amd8111e
+	eth
+	"AMD8111 based 10/100 Ethernet Controller"
+arcmsr
+	scsi
+	"ARECA (ARC11xx/12xx) SATA RAID Host Adapter"
+asix
+	eth
+	"DLink DUB-E100 USB Ethernet"
+ata_piix
+	scsi
+	"Intel PIIX/ICH ATA controllers"
+atmel_cs
+	eth
+	"Atmel at76c50x 802.11 PCMCIA wireless ethernet"
+atmel_pci
+	eth
+	"Atmel at76c50x 802.11 wireless ethernet"
+atp870u
+	scsi
+	"ACARD ATP870U PCI scsi controller"
+axnet_cs
+	eth
+	"Asix AX88190 PCMCIA ethernet driver"
+b44
+	eth
+	"Broadcom 4400 10/100 PCI ethernet adapter"
+be2iscsi
+	eth
+	"ServerEngines BladeEngine 2 Open iSCSI Driver"
+be2net
+	eth
+	"ServerEngines BladeEngine 2 10Gb NIC Driver"
+bfa
+	eth
+	"Brocade Fibre Channel to PCIe Host Bus Adapters (HBAs)"
+bna
+	eth
+	"Brocade FCoE/CEE to PCIe Converged Network Adapters (CNAs)"
+bnx2
+	eth
+	"Broadcom NetXtreme II Gigabit Ethernet adapter"
+bnx2x
+	eth
+	"Broadcom NetXtremeII 10Gb support"
+catc
+	eth
+	"CATC EL1210A NetMate USB Ethernet driver"
+cciss
+	scsi
+	"Compaq Smart Array 5xxx Controller"
+cpqarray
+	scsi
+	"Compaq Smart/2 RAID Controller"
+cxgb
+	eth
+	"Chelsio 10Gb Ethernet adapter"
+cxgb3
+	eth
+	"Chelsio 10Gb Ethernet adapter"
+cxgb4
+	eth
+	"Chelsio Terminator4 10G unified wire network controller"
+dl2k
+	eth
+	"D-Link DL2000-based Gigabit Ethernet Adapter"
+dmfe
+	eth
+	"Davicom DM9102(A)/DM9132/DM9801 fast ethernet"
+e100
+	eth
+	"Intel EtherExpress/100 driver"
+e1000
+	eth
+	"Intel EtherExpress/1000 gigabit"
+e1000e
+	eth
+	"Intel 82566DC-2 Gigabit Network Connection"
+enic
+	eth
+	"Cisco 10G Ethernet NIC driver"
+epic100
+	eth
+	"SMC 83c170 EPIC/100"
+fealnx
+	eth
+	"Myson MTD-8xx 100/10M Ethernet PCI Adapter"
+fmvj18x_cs
+	eth
+	"fmvj18x and compatible PCMCIA ethernet driver"
+fnic
+	eth
+	"Cisco FCoE HBA driver"
+forcedeth
+	eth
+	"nForce Ethernet Driver"
+gdth
+	scsi
+	"ICP RAID Controller"
+hptiop
+	scsi
+	"HighPoint RocketRAID SATA Controller"
+i2o_block
+	scsi
+	"I2O Block driver"
+ib_ipath
+	eth
+	"QLogic InfiniPath Driver"
+ib_mthca
+	eth
+	"Mellanox HCA support"
+ide-cs
+	ide
+	"PCMCIA IDE driver"
+igb
+	eth
+	"Intel 82575EB Gigabit Network/Backplane Connection"
+igbvf
+	eth
+	"Intel 82576 Virtual Function"
+ips
+	scsi
+	"IBM ServeRAID"
+isci
+	scsi
+	"Intel Patsburg SAS Controller Unit driver"
+ixgb
+	eth
+	"Intel PRO/10GbE"
+ixgbe
+	eth
+	"Intel 10 Gigabit PCI Express"
+kaweth
+	eth
+	"KL5USB101 USB Ethernet driver"
+lpfc
+	scsi
+	"Emulex OneConnect UCNA / LightPulse Fibre Channel driver"
+megaraid
+	scsi
+	"LSI MegaRAID Controllers"
+megaraid_mbox
+	scsi
+	"LSI MegaRAID Controllers"
+megaraid_sas
+	scsi
+	"LSI MegaRAID Controllers"
+mlx4_core
+	eth
+	"Mellanox ConnectX mt26448 10Gb/s low-level driver"
+mlx4_en
+	eth
+	"Mellanox ConnectX mt26448 10Gb/s Ethernet Driver"
+mlx4_ib
+	eth
+	"Mellanox ConnectX mt26448 10Gb/s InfiniBand driver"
+mpt2sas
+	scsi
+	"LSI MPT Fusion SAS 2.0 Device Driver"
+mptbase
+	scsi
+	"LSI Logic Fusion MPT Base Driver"
+mptctl
+	scsi
+	"LSI Logic Fusion MPT Misc Driver"
+mptfc
+	scsi
+	"LSI Logic Fusion MPT FC Host Driver"
+mptsas
+	scsi
+	"LSI Logic Fusion MPT SAS Host Driver"
+mptspi
+	scsi
+	"LSI Logic Fusion MPT SPI Host Driver"
+mvsas
+	scsi
+	"Marvell RAID bus controller MV64460/64461/64462"
+natsemi
+	eth
+	"NatSemi DP83815 Fast Ethernet"
+ne2k-pci
+	eth
+	"PCI NE2000 clones"
+netwave_cs
+	eth
+	"Netwave AirSurfer Wireless"
+netxen_nic
+	eth
+	"NetXen Multi port (1/10) Gigabit Network Driver"
+niu
+	eth
+	"Enables Sun Multithreaded 10G Ethernet Networking"
+nmclan_cs
+	eth
+	"New Media PCMCIA ethernet driver"
+ns83820
+	eth
+	"Natsemi 83820 gigabit"
+olympic
+	tr
+	"IBM Olympic-based PCI roken ring"
+orinoco_cs
+	eth
+	"Orinoco, Prism II and similar PCMCIA wireless ethernet"
+orinoco_nortel
+	eth
+	"Orinoco wireless ethernet using Nortel PCI bridge"
+orinoco_pci
+	eth
+	"Orinoco, Prism II and similar wireless ethernet"
+orinoco_plx
+	eth
+	"Orinoco, Prism II and similar wireless ethernet"
+orinoco_tmd
+	eth
+	"Orinoco, Prism II and similar wireless ethernet"
+pata_marvell
+	scsi
+	"Marvell PATA controllers"
+pata_pdc2027x
+	scsi
+	"Promise PATA controllers"
+pata_sis
+	scsi
+	"Pilicon Image PATA controllers"
+pcnet32
+	eth
+	"AMD PCnet32"
+pcnet_cs
+	eth
+	"NE2000 compatible PCMCIA ethernet driver"
+pegasus
+	eth
+	"Pegasus/Pegasus II USB Ethernet driver"
+pmcraid
+	scsi
+	"PMC Sierra MaxRAID Controller Adapters"
+prism54
+	eth
+	"Intersil Prism54"
+qla1280
+	scsi
+	"Qlogic 1280/12160"
+qla2xxx
+	scsi
+	"QLogic 2xxx"
+qla3xxx
+	eth
+	"Qlogic 3xxx"
+qla4xxx
+	scsi
+	"Qlogic 4xxx"
+qlcnic
+	eth
+	"QLogic Corp cLOM8214 1/10GbE Controller"
+qlge
+	eth
+	"QLogic 8xxx Ethernet"
+r8169
+	eth
+	"RTL8169 Gigabit Ethernet"
+rtl8150
+	eth
+	"rtl8150-based USB Ethernet driver"
+s2io
+	eth
+	"S2IO 10GbE"
+sata_inic162x
+	scsi
+	"Initio 162x SATA controllers"
+sata_mv
+	scsi
+	"Marvell SATA controllers"
+sata_nv
+	scsi
+	"nVidia nForce SATA controllers"
+sata_promise
+	scsi
+	"Promise SATA controllers"
+sata_qstor
+	scsi
+	"QStor SATA controllers"
+sata_sil
+	scsi
+	"Silicon Image SATA controllers"
+sata_sil24
+	scsi
+	"Silicon Image 3124/3132 SATA controllers"
+sata_sis
+	scsi
+	"SIS SATA controllers"
+sata_svw
+	scsi
+	"K2 SATA controllers"
+sata_sx4
+	scsi
+	"Promise SX4 SATA controllers"
+sata_uli
+	scsi
+	"ULi SATA controllers"
+sata_via
+	scsi
+	"VIA SATA controllers"
+sata_vsc
+	scsi
+	"VSC7174 SATA controllers"
+sfc
+	eth
+	"Solarflare Communications network driver"
+sis190
+	eth
+	"SiS sis190 Gigabit Ethernet"
+sis900
+	eth
+	"SiS 900/7016 PCI Fast Ethernet"
+skge
+	eth
+	"SysKonnect Gigabit Ethernet"
+sky2
+	eth
+	"Marvell Yukon 2 Gigabit Ethernet"
+smc91c92_cs
+	eth
+	"SMC 91c92 series PCMCIA ethernet driver"
+starfire
+	eth
+	"Adaptec Starfire"
+stex
+	scsi
+	"Promise SuperTrak EX"
+sundance
+	eth
+	"Sundance ST201 Alta"
+sungem
+	eth
+	"Apple GMAC"
+sunhme
+	eth
+	"Sun Happy Meal Ethernet"
+sx8
+	scsi
+	"Promise SATA SX8 block driver"
+sym53c8xx
+	scsi
+	"Symbios 53C896"
+tg3
+	eth
+	"Broadcom Tigon3 Ethernet"
+tulip
+	eth
+	"DEC 21040, most 21*40 Ethernet"
+	io "Base I/O address"
+typhoon
+	eth
+	"3Com Typhoon Family (3C990, 3CR990 and variants)"
+usb-storage
+	scsi
+	"USB Mass Storage driver for Linux"
+usbnet
+	eth
+	"USB Host-to-Host Link Driver"
+via-rhine
+	eth
+	"VIA VT86c100A Rhine-II PCI"
+via-velocity
+	eth
+	"VIA Velocity Gigabit Ethernet"
+virtio_blk
+	scsi
+	"Virtio block driver"
+virtio_net
+	eth
+	"Virtio network driver"
+wavelan_cs
+	eth
+	"WaveLAN PCMCIA wireless ethernet"
+winbond-840
+	eth
+	"Compex RL100ATX-PCI"
+wl3501_cs
+	eth
+	"Planet wl3501 PCMCIA wirelesss ethernet"
+xirc2ps_cs
+	eth
+	"Xircom PCMCIA ethernet driver"
+xircom_cb
+	eth
+	"Xircom Cardbus ethernet driver"
+vmxnet
+      eth
+      "VMware vmxnet ethernet driver"
+vmxnet3
+      eth
+      "VMware vmxnet3 ethernet driver"
