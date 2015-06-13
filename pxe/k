@@ -1,0 +1,45 @@
+#!ipxe
+
+menu
+item --gap -- ----------------------------  Welcome to the Awesome Menu ----------------------------
+item sysresccd1 SystemRescueCd  4.3.0   x86_64
+item sysresccd2 SystemRescueCd  4.3.0   i386
+item centos5    CentOS          5.11    x86_64
+item centos6    CentOS          6.6     x86_64
+item reboot     Reboot
+item
+item
+item --gap --             ---------------------------- Host Specs ----------------------------------
+item --gap                MAC address......${net0/mac} ||
+item --gap                IP address.......${ip}/${netmask} ||
+item --gap                Default gateway..${gateway} ||
+item --gap                DNS server.......${dns} ||
+item --gap                Serial...........${serial} ||
+item --gap                Manufacturer.....${manufacturer} ||
+item --gap                Product..........${product} ||
+item --gap                BIOS platform....${platform} ||
+choose --default reboot --timeout 60000 target && goto ${target}
+
+:sysresccd1
+kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/rescue64 scandelay=1 docache netboot=http://techdata.mirror.gtcomm.net/pxe/sysrcd/sysrcd.dat
+initrd http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/initram.igz
+
+:sysresccd1
+kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/rescue32 scandelay=1 docache netboot=http://techdata.mirror.gtcomm.net/pxe/sysrcd/sysrcd.dat
+initrd http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/initram.igz
+
+:centos5
+kernel http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/vmlinuz ks=http://kintoandar.com/share/ks5.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/initrd.img
+module https://raw.githubusercontent.com/kintoandar/rtfm/master/modules/modules.cgz /modules/modules.cgz
+module https://raw.githubusercontent.com/kintoandar/rtfm/master/modules/modules.alias /modules/modules.alias
+module https://raw.githubusercontent.com/kintoandar/rtfm/master/modules/module-info /modules/module-info
+boot
+
+:centos6
+kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
+boot
+
+:reboot
+reboot
