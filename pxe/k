@@ -3,6 +3,7 @@
 menu
 item --gap -- ------------- SystemRescueCd 4.3.0 (LIVE)
 item memtestp       Memtest86+
+item dban           DBAN
 item sysresccd1     SystemRescueCd x86_64
 item sysresccd2     SystemRescueCd i386
 item
@@ -11,15 +12,20 @@ item centos5        CentOS 5.11 x86_64
 item centos6        CentOS 6.6 x86_64
 item reboot         Reboot
 item
-item --gap -- [Host Details]
+item --gap -- [Network Config]
 item --gap    MAC address......${net0/mac} ||
 item --gap    IP address.......${ip}/${netmask} ||
 item --gap    Default gateway..${gateway} ||
 item --gap    DNS server.......${dns} ||
-item --gap    Manufacturer.....${manufacturer} ||
-item --gap    Product..........${product} ||
-item --gap    BIOS platform....${platform} ||
 choose --default reboot --timeout 60000 target && goto ${target}
+
+:memtestp
+kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/bootdisk/memtestp
+boot
+
+:dban
+kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/bootdisk/dban.bzi
+boot
 
 :sysresccd1
 kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/rescue64 scandelay=1 docache netboot=http://techdata.mirror.gtcomm.net/pxe/sysrcd/sysrcd.dat
@@ -29,10 +35,6 @@ boot
 :sysresccd2
 kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/rescue32 scandelay=1 docache netboot=http://techdata.mirror.gtcomm.net/pxe/sysrcd/sysrcd.dat
 initrd http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/initram.igz
-boot
-
-:memtestp
-kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/bootdisk/memtestp
 boot
 
 :centos5
