@@ -11,13 +11,14 @@ item
 item --gap -- --------------- INSTALL
 item centos5        CentOS 5.11 x86_64
 item centos6        CentOS 6.6 x86_64
+item
 item reboot         [Reboot]
 item
-item --gap -- == Current Network Config ==
-item --gap    MAC address......${net0/mac} ||
-item --gap    IP address.......${ip}/${netmask} ||
-item --gap    Default gateway..${gateway} ||
-item --gap    DNS server.......${dns} ||
+item --gap -- ___Current Network Config___
+item --gap    MAC...${net0/mac} ||
+item --gap    IP....${ip}/${netmask} ||
+item --gap    GW....${gateway} ||
+item --gap    DNS...${dns} ||
 choose --default reboot --timeout 60000 target && goto ${target}
 
 :tinycore
