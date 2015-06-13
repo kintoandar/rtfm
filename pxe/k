@@ -24,6 +24,8 @@ choose --default reboot --timeout 60000 target && goto ${target}
 kernel http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/distribution_files/vmlinuz 
 initrd http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/distribution_files/core.gz
 boot
+# tce-load -wi kmaps.tcz
+# sudo loadkmap < /usr/share/kmap/qwerty/pt-latin1.kmap
 
 :memtestp
 kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/bootdisk/memtestp
