@@ -1,18 +1,20 @@
 #!ipxe
 
 menu
-item --gap -- ----------------------------  Choose Your Destiny
-item --gap -- SystemRescueCd 4.3.0 LIVE
+item --gap -- ---------------------------- Choose Wisely
+item
+item --gap -- ------------- SystemRescueCd 4.3.0 (Live)
 item memtestp       Memtest86+
 item sysresccd1     SystemRescueCd x86_64
 item sysresccd2     SystemRescueCd i386
-item --gap -- CentOS INSTALL
+item
+item --gap -- ------------- CentOS (Install)
 item centos5        CentOS 5.11 x86_64
 item centos6        CentOS 6.6 x86_64
 item reboot         Reboot
 item
 item
-item --gap -- ---------------------------- Host Specs
+item --gap -- ---------------------------- Specs
 item --gap    MAC address......${net0/mac} ||
 item --gap    IP address.......${ip}/${netmask} ||
 item --gap    Default gateway..${gateway} ||
