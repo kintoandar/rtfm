@@ -1,19 +1,19 @@
 #!ipxe
 
 menu
-item --gap -- ---------------> LIVE
+item --gap -- --------------- LIVE
 item tinycore       TinyCore i386
 item memtestp       Memtest86+
 item dban           DBAN
 item sysresccd1     SystemRescueCd x86_64
 item sysresccd2     SystemRescueCd i386
 item
-item --gap -- ---------------> INSTALL
+item --gap -- --------------- INSTALL
 item centos5        CentOS 5.11 x86_64
 item centos6        CentOS 6.6 x86_64
 item reboot         [Reboot]
 item
-item --gap -- ---------------> Current Network Config
+item --gap -- == Current Network Config ==
 item --gap    MAC address......${net0/mac} ||
 item --gap    IP address.......${ip}/${netmask} ||
 item --gap    Default gateway..${gateway} ||
