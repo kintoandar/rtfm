@@ -22,7 +22,7 @@ choose --default reboot --timeout 60000 target && goto ${target}
 
 :tinycore
 kernel http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/distribution_files/vmlinuz 
-initrd http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/distribution_files/core.gz keymap=qwerty/pt
+initrd http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/distribution_files/core.gz
 boot
 
 :memtestp
