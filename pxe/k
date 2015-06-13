@@ -14,10 +14,10 @@ item centos6        CentOS 6.6 x86_64
 item
 item reboot         [Reboot]
 item
-item --gap    MAC ..... ${net0/mac} ||
-item --gap    IP ...... ${ip}/${netmask} ||
-item --gap    GW ...... ${gateway} ||
-item --gap    DNS ..... ${dns} ||
+item --gap    HWADDR ........ ${net0/mac} ||
+item --gap    IPADDR ........ ${ip}/${netmask} ||
+item --gap    GATEWAY ....... ${gateway} ||
+item --gap    NAMESERVER .... ${dns} ||
 choose --default reboot --timeout 60000 target && goto ${target}
 
 :tinycore
