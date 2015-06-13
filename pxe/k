@@ -2,10 +2,13 @@
 
 menu
 item --gap -- ----------------------------  Choose Your Destiny
-item sysresccd1     SystemRescueCd  4.3.0   x86_64 LIVE
-item sysresccd2     SystemRescueCd  4.3.0   i386   LIVE
-item centos5        CentOS          5.11    x86_64 INSTALL
-item centos6        CentOS          6.6     x86_64 INSTALL
+item --gap -- SystemRescueCd 4.3.0 LIVE
+item memtestp       Memtest86+
+item sysresccd1     SystemRescueCd x86_64
+item sysresccd2     SystemRescueCd i386
+item --gap -- CentOS INSTALL
+item centos5        CentOS 5.11 x86_64
+item centos6        CentOS 6.6 x86_64
 item reboot         Reboot
 item
 item
@@ -28,6 +31,10 @@ boot
 :sysresccd2
 kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/rescue32 scandelay=1 docache netboot=http://techdata.mirror.gtcomm.net/pxe/sysrcd/sysrcd.dat
 initrd http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/initram.igz
+boot
+
+:memtestp
+kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/bootdisk/memtestp
 boot
 
 :centos5
