@@ -9,8 +9,8 @@ item sysresccd1     SystemRescueCd x86_64
 item sysresccd2     SystemRescueCd i386
 item
 item --gap -- --------------- INSTALL
-item centos5        CentOS 5.11 x86_64
-item centos6        CentOS 6.6 x86_64
+item centos6_physical        CentOS 6.6 x86_64 Minimal Install - Physical
+item centos6_vm              CentOS 6.6 x86_64 Minimal Install - VM
 item
 item reboot         [Reboot]
 item
@@ -45,16 +45,13 @@ kernel http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/rescue32 scandelay=
 initrd http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/initram.igz
 boot
 
-:centos5
-kernel http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/vmlinuz ks=http://kintoandar.com/share/ks5.cfg ksdevice=bootif ip=dhcp
-initrd http://mirror.centos.org/centos-5/5.11/os/x86_64/images/pxeboot/initrd.img
-module https://raw.githubusercontent.com/kintoandar/rtfm/master/modules/modules.cgz /modules/modules.cgz
-module https://raw.githubusercontent.com/kintoandar/rtfm/master/modules/modules.alias /modules/modules.alias
-module https://raw.githubusercontent.com/kintoandar/rtfm/master/modules/module-info /modules/module-info
+:centos6_physical
+kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
 boot
 
-:centos6
-kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal.cfg ksdevice=bootif ip=dhcp
+:centos6_vm
+kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal_vm.cfg ksdevice=bootif ip=dhcp
 initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
 boot
 
