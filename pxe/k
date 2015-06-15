@@ -9,16 +9,16 @@ item sysresccd1     SystemRescueCd x86_64
 item sysresccd2     SystemRescueCd i386
 item
 item --gap -- --------------- INSTALL
-item centos6_physical        CentOS 6.6 x86_64 Minimal - Physical
-item centos6_vm              CentOS 6.6 x86_64 Minimal - VM
+item centos6_physical        CentOS 6.6 x86_64 Minimal Install - Physical
+item centos6_vm              CentOS 6.6 x86_64 Minimal Install - VM
 item
-item exit         [Exit]
+item reboot         [Reboot]
 item
 item --gap    HWADDR ........ ${net0/mac} ||
 item --gap    IPADDR ........ ${ip}/${netmask} ||
 item --gap    GATEWAY ....... ${gateway} ||
 item --gap    NAMESERVER .... ${dns} ||
-choose --default exit --timeout 60000 target && goto ${target}
+choose --default reboot --timeout 60000 target && goto ${target}
 
 :tinycore
 kernel http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/distribution_files/vmlinuz 
@@ -55,5 +55,5 @@ kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz un
 initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
 boot
 
-:exit
-exit
+:reboot
+reboot
