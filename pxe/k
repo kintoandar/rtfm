@@ -18,7 +18,7 @@ item --gap    HWADDR ........ ${net0/mac} ||
 item --gap    IPADDR ........ ${ip}/${netmask} ||
 item --gap    GATEWAY ....... ${gateway} ||
 item --gap    NAMESERVER .... ${dns} ||
-choose --default reboot --timeout 60000 target && goto ${target}
+choose --default reboot --timeout 600000 target && goto ${target}
 
 :tinycore
 kernel http://distro.ibiblio.org/tinycorelinux/6.x/x86/release/distribution_files/vmlinuz 
