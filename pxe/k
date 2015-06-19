@@ -12,6 +12,9 @@ item --gap -- --------------- INSTALL
 item centos6_physical        CentOS 6.6 x86_64 Minimal > Physical
 item centos6_vm              CentOS 6.6 x86_64 Minimal > VM
 item
+item centos7_physical        CentOS 7 x86_64 Minimal > Physical
+item centos7_vm              CentOS 7 x86_64 Minimal > VM
+item
 item reboot         [Reboot]
 item
 item --gap    HWADDR ........ ${net0/mac} ||
@@ -53,6 +56,16 @@ boot
 :centos6_vm
 kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal_vm.cfg ksdevice=bootif ip=dhcp
 initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
+boot
+
+:centos7_physical
+kernel http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/initrd.img
+boot
+
+:centos7_vm
+kernel http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal_vm.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/initrd.img
 boot
 
 :reboot
