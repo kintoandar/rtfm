@@ -59,12 +59,12 @@ initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
 boot
 
 :centos7_physical
-kernel http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal.cfg ksdevice=bootif ip=dhcp
+kernel http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks7_minimal.cfg ksdevice=bootif ip=dhcp
 initrd http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/initrd.img
 boot
 
 :centos7_vm
-kernel http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal_vm.cfg ksdevice=bootif ip=dhcp
+kernel http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks7_minimal_vm.cfg ksdevice=bootif ip=dhcp
 initrd http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/initrd.img
 boot
 
