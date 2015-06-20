@@ -9,9 +9,8 @@ item sysresccd1     SystemRescueCd x86_64
 item sysresccd2     SystemRescueCd i386
 item
 item --gap -- --------------- INSTALL
-item centos6_physical        CentOS 6.6 x86_64 Minimal > Physical
-item centos6_vm              CentOS 6.6 x86_64 Minimal > VM
-item
+item centos6_physical        CentOS 6 x86_64 Minimal > Physical
+item centos6_vm              CentOS 6 x86_64 Minimal > VM
 item centos7_physical        CentOS 7 x86_64 Minimal > Physical
 item centos7_vm              CentOS 7 x86_64 Minimal > VM
 item
@@ -49,13 +48,13 @@ initrd http://techdata.mirror.gtcomm.net/pxe/sysrcd/isolinux/initram.igz
 boot
 
 :centos6_physical
-kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal.cfg ksdevice=bootif ip=dhcp
-initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
+kernel http://mirror.centos.org/centos-6/6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-6/6/os/x86_64/images/pxeboot/initrd.img
 boot
 
 :centos6_vm
-kernel http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal_vm.cfg ksdevice=bootif ip=dhcp
-initrd http://mirror.centos.org/centos-6/6.6/os/x86_64/images/pxeboot/initrd.img
+kernel http://mirror.centos.org/centos-6/6/os/x86_64/images/pxeboot/vmlinuz unsupported_hardware text NOVERIFYSSL ks=https://raw.githubusercontent.com/kintoandar/rtfm/master/kickstart/ks6_minimal_vm.cfg ksdevice=bootif ip=dhcp
+initrd http://mirror.centos.org/centos-6/6/os/x86_64/images/pxeboot/initrd.img
 boot
 
 :centos7_physical
