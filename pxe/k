@@ -1,14 +1,14 @@
 #!ipxe
 
-menu
-item --gap -- --------------- @kintoandar LIVE DISTROS
+menu @kintoandar Labs
+item --gap -- --------------- LIVE DISTROS
 item tinycore       TinyCore i386
 item memtestp       Memtest86+
 item dban           DBAN
 item sysresccd1     SystemRescueCd x86_64
 item sysresccd2     SystemRescueCd i386
 item
-item --gap -- --------------- INSTALL
+item --gap -- --------------- KICKSTART INSTALL
 item centos6_physical        CentOS 6 x86_64 Minimal > Physical
 item centos6_vm              CentOS 6 x86_64 Minimal > VM
 item centos7_physical        CentOS 7 x86_64 Minimal > Physical
