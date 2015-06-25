@@ -1,7 +1,7 @@
 #!ipxe
 
 menu
-item --gap -- --------------- LIVE
+item --gap -- --------------- @kintoandar LIVE DISTROS
 item tinycore       TinyCore i386
 item memtestp       Memtest86+
 item dban           DBAN
