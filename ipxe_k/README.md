@@ -72,3 +72,4 @@ keybase dir verify
 There are lots of options, including assertions for automating your checks.
 
 For more info, check out https://keybase.io/docs/command_line/code_signing
+
